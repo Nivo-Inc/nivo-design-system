@@ -4,3 +4,5 @@
 # Brand assets receive explicit ownership.
 /brand/ @sid-d
 /tokens/ @sid-d
+/CONTENT_AND_VOICE.md @sid-d
+/icons/ @sid-d

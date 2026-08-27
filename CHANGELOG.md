@@ -2,6 +2,26 @@
 
 All notable changes to the Nivo Design System are recorded here. Versions follow [Semantic Versioning](https://semver.org/).
 
+## [1.2.0] - 2026-08-27
+
+### Added
+
+- Content-and-voice system for product, marketing, support, email, and AI-assisted experiences
+- Approved terminology using “service provider” for a specific Nivo user
+- Lucide-based icon system with visual, semantic, accessibility, motion, and custom-icon rules
+- Machine-readable map of 58 verified Lucide icon names
+- Lucide and Feather third-party license notices
+
+### Changed
+
+- Extended the visual documentation with content and icon examples
+- Expanded source-of-truth and AI-collaborator guidance
+
+### Verified
+
+- Every mapped icon name exists in Lucide’s official library
+- Locked master-logo geometry and checksum remain unchanged
+
 ## [1.1.0] - 2026-08-27
 
 ### Added

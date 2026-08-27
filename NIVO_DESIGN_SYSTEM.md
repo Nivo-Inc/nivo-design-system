@@ -1,4 +1,4 @@
-# Nivo Design System v1
+# Nivo Design System v1.2
 
 ## 1. Purpose
 
@@ -212,6 +212,8 @@ Preferred: `Three updates require your review.`
 
 Avoid: `Hey! We found some exciting things for you!`
 
+`CONTENT_AND_VOICE.md` is the detailed source for audience terminology, interface patterns, marketing and support voice, AI-assisted writing, and reusable examples. Use **service provider** for a specific Nivo user unless a more precise real-world role is known.
+
 ## 8. Spacing and layout
 
 Nivo uses a 4px base unit. Choose values from the approved scale rather than inventing one-off gaps.
@@ -271,6 +273,8 @@ Use shadows sparingly for actual elevation: menus, dialogs, overlays, and select
 
 ## 10. Iconography
 
+Use [Lucide](https://lucide.dev/) as the base product icon library. `icons/ICON_SYSTEM.md` defines detailed visual and accessibility rules; `icons/icon-map.json` maps recurring Nivo meanings to approved Lucide names.
+
 Use rounded line icons with:
 
 - 20px or 24px base grid
@@ -280,6 +284,8 @@ Use rounded line icons with:
 - Consistent optical weight
 
 Do not mix thin technical icons, heavy filled icons, and rounded line icons in the same experience. Use filled icons only when a selected state or established convention requires them.
+
+Lucide does not replace the Nivo logo. Brand identity always uses the official assets under `brand/`.
 
 ## 11. Imagery and graphics
 
@@ -335,6 +341,8 @@ When moving the library into the product's actual framework, preserve native sem
 - Exact visual values: `tokens/design-tokens.json`
 - Web variables: `tokens/tokens.css`
 - Component styles and behavior: `components/`
+- Content, terminology, and voice: `CONTENT_AND_VOICE.md`
+- Icon behavior and semantic names: `icons/ICON_SYSTEM.md` and `icons/icon-map.json`
 - Usage rules and principles: this document
 - Visual examples: `reference/`
 
@@ -347,9 +355,10 @@ Changes to brand colors, typography, logo geometry, spacing scale, or semantic m
 Before producing Nivo UI or brand material:
 
 1. Read this document.
-2. Load the official tokens.
-3. Reuse official logo assets.
-4. Prefer existing components when available.
-5. Flag any requirement that cannot be satisfied without adding or changing a foundation token.
+2. Read `CONTENT_AND_VOICE.md` and `icons/icon-map.json` when producing interface content.
+3. Load the official tokens.
+4. Reuse official logo assets.
+5. Prefer existing components and mapped Lucide icons when available.
+6. Flag any requirement that cannot be satisfied without adding or changing a foundation token.
 
 Do not generate a new logo, palette, typeface, or visual style unless explicitly asked to revise the design system itself.

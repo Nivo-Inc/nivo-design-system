@@ -1,7 +1,7 @@
 {
   "meta": {
     "name": "Nivo Design System",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "scope": "foundations-and-components",
     "baseUnit": "4px"
   },

@@ -23,6 +23,10 @@ Update the reusable component files, the interactive catalog, and `components/CO
 
 Treat files under `brand/` as controlled assets. Changes require explicit brand-owner approval. The master logo must retain the SHA-256 digest documented in the README and asset manifest.
 
+### Content and icon changes
+
+Update `CONTENT_AND_VOICE.md` when adding an audience term, recurring message pattern, or writing rule. Update `icons/icon-map.json` when a recurring meaning receives an approved icon. Use official Lucide names and retain the license notice in `THIRD_PARTY_NOTICES.md`.
+
 ## Required verification
 
 - Test at desktop and at a 320px-wide viewport.
@@ -31,6 +35,7 @@ Treat files under `brand/` as controlled assets. Changes require explicit brand-
 - Confirm status is communicated with text or iconography, not color alone.
 - Respect reduced-motion preferences.
 - Check internal links and asset paths.
+- Check audience terms against the content guide and icon names against the semantic map.
 - Confirm the master-logo checksum has not changed.
 
 Run this checksum command from the repository root:

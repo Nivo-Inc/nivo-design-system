@@ -744,6 +744,157 @@ a {
 
 .spacing-scale b { color: var(--nivo-text-muted); font-size: 9px; font-weight: 500; }
 
+.guidance-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.guidance-card {
+  background: var(--nivo-surface-elevated);
+  border: 1px solid var(--nivo-border-subtle);
+  border-radius: var(--nivo-radius-xl);
+  display: flex;
+  flex-direction: column;
+  min-height: 620px;
+  padding: clamp(28px, 4vw, 44px);
+}
+
+.guidance-label {
+  color: var(--nivo-text-muted);
+  font-size: 10px;
+  font-weight: var(--nivo-weight-semibold);
+  letter-spacing: 0.11em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.guidance-card h3 {
+  font-size: clamp(32px, 3.5vw, 48px);
+  font-weight: var(--nivo-weight-semibold);
+  letter-spacing: -0.045em;
+  line-height: 1.05;
+  margin: 24px 0 30px;
+}
+
+.voice-traits,
+.icon-spec {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.voice-traits span,
+.icon-spec span {
+  background: var(--nivo-brand-lavender-soft);
+  border-radius: var(--nivo-radius-pill);
+  color: var(--nivo-text-primary);
+  font-size: 11px;
+  font-weight: var(--nivo-weight-medium);
+  padding: 8px 11px;
+}
+
+.icon-spec span { background: var(--nivo-brand-mint-soft); }
+
+.terminology-strip {
+  border-bottom: 1px solid var(--nivo-border-subtle);
+  border-top: 1px solid var(--nivo-border-subtle);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 32px 0;
+  padding: 22px 0;
+}
+
+.terminology-strip div {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+  padding-right: 12px;
+}
+
+.terminology-strip span {
+  color: var(--nivo-text-muted);
+  font-size: 9px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.terminology-strip strong {
+  font-size: 13px;
+  font-weight: var(--nivo-weight-semibold);
+}
+
+.copy-comparison {
+  display: grid;
+  gap: 10px;
+}
+
+.copy-example {
+  align-items: center;
+  border-radius: var(--nivo-radius-lg);
+  display: grid;
+  gap: 14px;
+  grid-template-columns: 52px 1fr;
+  padding: 16px;
+}
+
+.copy-example--avoid { background: var(--nivo-danger-background); }
+.copy-example--prefer { background: var(--nivo-success-background); }
+.copy-example span { color: var(--nivo-text-muted); font-size: 9px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; }
+.copy-example p { font-size: 13px; line-height: 1.45; margin: 0; }
+
+.guidance-link {
+  align-items: center;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: var(--nivo-weight-semibold);
+  gap: 6px;
+  margin-top: auto;
+  text-decoration: none;
+}
+
+.guidance-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+.icon-examples {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 32px 0;
+}
+
+.icon-examples > div {
+  align-items: center;
+  background: var(--nivo-background-canvas);
+  border-radius: var(--nivo-radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  justify-content: center;
+  min-height: 112px;
+  padding: 14px 8px;
+}
+
+.icon-examples svg {
+  fill: none;
+  height: 24px;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.75;
+  width: 24px;
+}
+
+.icon-examples span { color: var(--nivo-text-secondary); font-size: 10px; }
+
+.icon-guidance-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: auto;
+}
+
+.icon-guidance-links .guidance-link { margin-top: 0; }
+
 .components-section {
   background: var(--nivo-brand-navy);
   color: var(--nivo-text-inverse);
@@ -979,6 +1130,7 @@ a {
   .principles-grid h2 { margin-top: 24px; }
   .section-intro--split { align-items: start; gap: 24px; grid-template-columns: 1fr; }
   .truth-grid { grid-template-columns: 1fr; }
+  .guidance-grid { grid-template-columns: 1fr; }
   .truth-card { min-height: 290px; }
   .logo-card { min-height: 280px; padding: 42px; }
   .foundation-split { gap: 84px; }
@@ -1011,6 +1163,9 @@ a {
   .section-intro h2,
   .governance-layout h2 { font-size: 40px; }
   .truth-card { min-height: 276px; padding: 24px; }
+  .guidance-card { min-height: 0; }
+  .terminology-strip { gap: 14px; grid-template-columns: 1fr; }
+  .icon-examples { grid-template-columns: repeat(2, 1fr); }
   .logo-showcase { grid-template-columns: 1fr; }
   .logo-card { min-height: 245px; }
   .brand-rule { align-items: start; grid-template-columns: 1fr; }

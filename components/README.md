@@ -1,4 +1,4 @@
-# Nivo UI Component Library v1
+# Nivo UI Component Library v1.1
 
 Open `index.html` in a browser to view and interact with the complete component catalog.
 

@@ -9,6 +9,8 @@ Open `index.html` locally, or visit the GitHub Pages site after it is enabled fo
 - Brand assets and locked logo usage
 - Color, type, spacing, radius, and elevation foundations
 - Interactive component demonstrations and specifications
+- Content, terminology, voice, and reusable writing patterns
+- Lucide-based icon guidance and semantic mappings
 - Accessibility and responsive-design requirements
 - Downloadable packages and visual references
 
@@ -18,9 +20,11 @@ The interactive component catalog is in [`components/index.html`](components/ind
 
 1. Exact values in [`tokens/design-tokens.json`](tokens/design-tokens.json)
 2. Brand and interface rules in [`NIVO_DESIGN_SYSTEM.md`](NIVO_DESIGN_SYSTEM.md)
-3. Official assets in [`brand/`](brand/)
-4. Component specifications and styles in [`components/`](components/)
-5. Visual examples in [`reference/`](reference/)
+3. Content and terminology in [`CONTENT_AND_VOICE.md`](CONTENT_AND_VOICE.md)
+4. Icon behavior and names in [`icons/`](icons/)
+5. Official assets in [`brand/`](brand/)
+6. Component specifications and styles in [`components/`](components/)
+7. Visual examples in [`reference/`](reference/)
 
 When an example and a token disagree, use the token. When a logo depiction and an official logo asset disagree, use the official asset.
 
@@ -40,8 +44,11 @@ Never redraw, trace, simplify, optimize, or regenerate the mark. Use the supplie
 brand/        Official logo, favicon, and app-icon assets
 components/   Interactive catalog, reusable styles, behavior, and specs
 downloads/    Packaged downloads for handoff
+icons/        Lucide usage rules and semantic icon mappings
 reference/    Approved visual preview board
 tokens/       Machine-readable JSON and CSS custom properties
+CONTENT_AND_VOICE.md  Approved terminology and writing system
+THIRD_PARTY_NOTICES.md  Required notices for approved third-party resources
 index.html    Visual documentation homepage
 ```
 
@@ -70,4 +77,4 @@ When GitHub Pages is available for the repository, the documentation site publis
 
 ## Current release
 
-Version **1.1.0** includes the approved Nivo brand and interface foundations, the locked master logo, and the first production component layer.
+Version **1.2.0** includes the approved Nivo brand and interface foundations, the locked master logo, the first production component layer, the content-and-voice system, and the Lucide-based icon system.
