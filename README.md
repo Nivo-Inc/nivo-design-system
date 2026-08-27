@@ -66,7 +66,7 @@ Read [`CONTRIBUTING.md`](CONTRIBUTING.md) before changing the system. In short:
 4. Submit the change through a reviewed pull request.
 5. Record user-facing changes in [`CHANGELOG.md`](CHANGELOG.md).
 
-The documentation site publishes automatically from `main` through GitHub Actions.
+When GitHub Pages is available for the repository, the documentation site publishes automatically from `main` through GitHub Actions. Pages requires a public repository on the current account plan.
 
 ## Current release
 
