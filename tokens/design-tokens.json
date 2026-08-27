@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "name": "Nivo Design System",
+    "version": "1.1.0",
+    "scope": "foundations-and-components",
+    "baseUnit": "4px"
+  },
+  "color": {
+    "brand": {
+      "navy": "#17263D",
+      "lavender": "#A285E8",
+      "lavenderSoft": "#EFEAFE",
+      "blue": "#6A9BF3",
+      "blueSoft": "#EAF0FE",
+      "mintDiagonal": "#A0E1C6",
+      "mintRight": "#8EDDBF",
+      "mintSoft": "#E7F6F0",
+      "yellow": "#F2C77F",
+      "yellowSoft": "#FBF1D8"
+    },
+    "background": {
+      "canvas": "#F2EEE7",
+      "canvasStrong": "#EDE9E2"
+    },
+    "surface": {
+      "base": "#FBF9F5",
+      "elevated": "#FFFFFF",
+      "disabled": "#E9E4DD"
+    },
+    "text": {
+      "primary": "#17263D",
+      "secondary": "#4E5958",
+      "muted": "#626A68",
+      "inverse": "#FBF9F5",
+      "disabled": "#858B88"
+    },
+    "border": {
+      "subtle": "#DDD6CC",
+      "strong": "#A59C92"
+    },
+    "overlay": {
+      "backdrop": "rgba(13, 24, 40, 0.48)"
+    },
+    "interactive": {
+      "primary": "#17263D",
+      "primaryHover": "#223753",
+      "primaryPressed": "#0D1828",
+      "focus": "#3A65BA"
+    },
+    "semantic": {
+      "success": "#226B55",
+      "successBackground": "#E7F3EF",
+      "warning": "#75500F",
+      "warningBackground": "#FBF1D8",
+      "danger": "#A1373F",
+      "dangerBackground": "#FBEAEC",
+      "info": "#2F5DAA",
+      "infoBackground": "#EAF0FA"
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "interface": "Inter, Avenir Next, Avenir, Helvetica, Arial, sans-serif",
+      "wordmark": "Use official outlined logo assets only"
+    },
+    "fontWeight": {
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600
+    },
+    "style": {
+      "displayXL": { "fontSize": "64px", "lineHeight": "72px", "fontWeight": 600, "letterSpacing": "-0.04em" },
+      "displayL": { "fontSize": "52px", "lineHeight": "60px", "fontWeight": 600, "letterSpacing": "-0.035em" },
+      "displayM": { "fontSize": "44px", "lineHeight": "52px", "fontWeight": 600, "letterSpacing": "-0.03em" },
+      "heading1": { "fontSize": "40px", "lineHeight": "48px", "fontWeight": 600, "letterSpacing": "-0.025em" },
+      "heading2": { "fontSize": "32px", "lineHeight": "40px", "fontWeight": 600, "letterSpacing": "-0.02em" },
+      "heading3": { "fontSize": "24px", "lineHeight": "32px", "fontWeight": 600, "letterSpacing": "-0.015em" },
+      "heading4": { "fontSize": "20px", "lineHeight": "28px", "fontWeight": 600, "letterSpacing": "-0.01em" },
+      "bodyL": { "fontSize": "18px", "lineHeight": "28px", "fontWeight": 400, "letterSpacing": "0" },
+      "bodyM": { "fontSize": "16px", "lineHeight": "24px", "fontWeight": 400, "letterSpacing": "0" },
+      "bodyS": { "fontSize": "14px", "lineHeight": "20px", "fontWeight": 400, "letterSpacing": "0" },
+      "label": { "fontSize": "14px", "lineHeight": "20px", "fontWeight": 600, "letterSpacing": "0.01em" },
+      "caption": { "fontSize": "12px", "lineHeight": "16px", "fontWeight": 500, "letterSpacing": "0.01em" }
+    }
+  },
+  "spacing": {
+    "0": "0px",
+    "1": "4px",
+    "2": "8px",
+    "3": "12px",
+    "4": "16px",
+    "5": "20px",
+    "6": "24px",
+    "8": "32px",
+    "10": "40px",
+    "12": "48px",
+    "16": "64px",
+    "20": "80px",
+    "24": "96px",
+    "32": "128px"
+  },
+  "radius": {
+    "none": "0px",
+    "xs": "4px",
+    "sm": "6px",
+    "md": "8px",
+    "lg": "10px",
+    "xl": "16px",
+    "2xl": "24px",
+    "pill": "999px"
+  },
+  "borderWidth": {
+    "default": "1px",
+    "focus": "2px"
+  },
+  "shadow": {
+    "sm": "0 1px 2px rgba(23, 38, 61, 0.08)",
+    "md": "0 8px 24px rgba(23, 38, 61, 0.10)",
+    "lg": "0 18px 48px rgba(23, 38, 61, 0.12)"
+  },
+  "layout": {
+    "gutterMobile": "16px",
+    "gutterTablet": "24px",
+    "gutterDesktop": "32px",
+    "contentMax": "1200px",
+    "readingMax": "720px",
+    "breakpointSm": "640px",
+    "breakpointMd": "768px",
+    "breakpointLg": "1024px",
+    "breakpointXl": "1280px"
+  },
+  "icon": {
+    "sizeSm": "20px",
+    "sizeMd": "24px",
+    "strokeWidth": "1.75px",
+    "lineCap": "round",
+    "lineJoin": "round"
+  },
+  "motion": {
+    "durationFast": "120ms",
+    "durationStandard": "180ms",
+    "durationDeliberate": "280ms",
+    "easingStandard": "cubic-bezier(0.2, 0, 0, 1)",
+    "easingEntrance": "cubic-bezier(0.16, 1, 0.3, 1)"
+  }
+}

@@ -1,0 +1,6 @@
+# Design-system changes require review from the Nivo repository owner.
+* @sid-d
+
+# Brand assets receive explicit ownership.
+/brand/ @sid-d
+/tokens/ @sid-d

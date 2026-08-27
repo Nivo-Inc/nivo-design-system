@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive Nivo UI component library built from the approved design-system foundations.">
+  <title>Nivo UI Component Library v1.1</title>
+  <link rel="stylesheet" href="../tokens/tokens.css">
+  <link rel="stylesheet" href="nivo-components.css">
+  <link rel="stylesheet" href="catalog.css">
+</head>
+<body>
+  <a class="catalog-skip-link" href="#main-content">Skip to component catalog</a>
+
+  <svg aria-hidden="true" width="0" height="0" style="position:absolute">
+    <symbol id="icon-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor"/></symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6" fill="none" stroke="currentColor"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6" fill="none" stroke="currentColor"/></symbol>
+    <symbol id="icon-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor"/><path d="M12 11v5M12 8h.01" fill="none" stroke="currentColor"/></symbol>
+    <symbol id="icon-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor"/><path d="m8 12 3 3 5-6" fill="none" stroke="currentColor"/></symbol>
+    <symbol id="icon-warning" viewBox="0 0 24 24"><path d="M10.3 4.5 3 17.2A1.2 1.2 0 0 0 4 19h16a1.2 1.2 0 0 0 1-1.8L13.7 4.5a2 2 0 0 0-3.4 0Z" fill="none" stroke="currentColor"/><path d="M12 9v4M12 16h.01" fill="none" stroke="currentColor"/></symbol>
+    <symbol id="icon-danger" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor"/><path d="M12 7v6M12 16h.01" fill="none" stroke="currentColor"/></symbol>
+    <symbol id="icon-more" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1" fill="currentColor"/><circle cx="12" cy="12" r="1" fill="currentColor"/><circle cx="19" cy="12" r="1" fill="currentColor"/></symbol>
+    <symbol id="icon-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6" fill="none" stroke="currentColor"/></symbol>
+    <symbol id="icon-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6" fill="none" stroke="currentColor"/></symbol>
+    <symbol id="icon-download" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 19h14" fill="none" stroke="currentColor"/></symbol>
+  </svg>
+
+  <div class="catalog-shell">
+    <aside class="catalog-sidebar" aria-label="Component library navigation">
+      <img class="catalog-logo" src="../brand/logo/nivo-logo-horizontal-color.svg" alt="Nivo">
+      <a class="catalog-back" href="../index.html"><span aria-hidden="true">←</span> System home</a>
+      <div class="catalog-version">UI library v1.1</div>
+
+      <p class="catalog-nav-title">Foundation</p>
+      <nav class="catalog-nav" aria-label="Catalog sections">
+        <a href="#overview" aria-current="location">Overview</a>
+        <a href="#buttons">Buttons and links</a>
+        <a href="#forms">Form fields</a>
+        <a href="#selection">Selection controls</a>
+        <a href="#feedback">Feedback</a>
+        <a href="#cards">Cards</a>
+        <a href="#navigation">Navigation</a>
+        <a href="#data">Data display</a>
+        <a href="#overlays">Overlays</a>
+        <a href="#empty-states">Empty states</a>
+      </nav>
+
+      <div class="catalog-sidebar-footer">
+        Built entirely from Nivo foundation tokens. No component introduces an independent brand color, radius, spacing scale, or shadow.
+      </div>
+    </aside>
+
+    <main class="catalog-main" id="main-content">
+      <header class="catalog-hero" id="overview">
+        <div>
+          <p class="catalog-eyebrow">Nivo design system / Component layer</p>
+          <h1 class="catalog-title">Calm components for complex work.</h1>
+          <p class="catalog-lede">A production-minded, accessible UI library built directly from Nivo Foundations v1. Every pattern is semantic, keyboard usable, responsive, and ready to map into the product's eventual framework.</p>
+        </div>
+        <img class="catalog-hero-mark" src="../brand/logo/nivo-mark-color.svg" alt="">
+      </header>
+
+      <div class="catalog-summary" aria-label="Library summary">
+        <div class="catalog-summary-card"><strong class="catalog-summary-value">24</strong><span class="catalog-summary-label">Core component patterns</span></div>
+        <div class="catalog-summary-card"><strong class="catalog-summary-value">7</strong><span class="catalog-summary-label">Required interaction states</span></div>
+        <div class="catalog-summary-card"><strong class="catalog-summary-value">100%</strong><span class="catalog-summary-label">Foundation-token driven</span></div>
+      </div>
+
+      <section class="catalog-section" id="buttons" aria-labelledby="buttons-title">
+        <div class="catalog-section-header">
+          <div>
+            <p class="catalog-section-number">01 / ACTIONS</p>
+            <h2 class="catalog-section-title" id="buttons-title">Buttons and links</h2>
+            <p class="catalog-section-description">Use one primary action per decision area. Secondary and ghost actions reduce emphasis without reducing clarity.</p>
+          </div>
+          <a class="nivo-link catalog-spec-link" href="COMPONENTS.md#buttons">Read specification <svg aria-hidden="true"><use href="#icon-arrow-right"/></svg></a>
+        </div>
+
+        <div class="catalog-panel">
+          <p class="catalog-demo-label">Hierarchy</p>
+          <div class="catalog-row">
+            <button class="nivo-button" type="button">Primary action</button>
+            <button class="nivo-button nivo-button--secondary" type="button">Secondary</button>
+            <button class="nivo-button nivo-button--ghost" type="button">Ghost action</button>
+            <button class="nivo-button nivo-button--danger" type="button">Delete item</button>
+            <a class="nivo-link" href="#buttons">Inline link <svg aria-hidden="true"><use href="#icon-arrow-right"/></svg></a>
+          </div>
+
+          <p class="catalog-demo-label">Sizes and icons</p>
+          <div class="catalog-row">
+            <button class="nivo-button nivo-button--sm" type="button">Small</button>
+            <button class="nivo-button" type="button"><svg aria-hidden="true"><use href="#icon-plus"/></svg>Create plan</button>
+            <button class="nivo-button nivo-button--lg" type="button">Large action</button>
+            <button class="nivo-button nivo-button--secondary nivo-button--icon" type="button" aria-label="Download"><svg aria-hidden="true"><use href="#icon-download"/></svg></button>
+          </div>
+
+          <p class="catalog-demo-label">States</p>
+          <div class="catalog-row">
+            <button class="nivo-button" id="nivo-loading-demo" type="button">Run loading state</button>
+            <button class="nivo-button" type="button" disabled>Disabled</button>
+            <button class="nivo-button nivo-button--secondary" type="button" aria-disabled="true">Unavailable</button>
+          </div>
+          <div class="catalog-note">
+            <svg aria-hidden="true"><use href="#icon-info"/></svg>
+            <span>Focus rings appear only for keyboard focus. Loading actions retain their accessible name and expose <span class="catalog-code">aria-busy</span>.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog-section" id="forms" aria-labelledby="forms-title">
+        <div class="catalog-section-header">
+          <div>
+            <p class="catalog-section-number">02 / INPUT</p>
+            <h2 class="catalog-section-title" id="forms-title">Form fields</h2>
+            <p class="catalog-section-description">Labels remain visible. Help and error messages explain what users can do next rather than merely announcing failure.</p>
+          </div>
+          <a class="nivo-link catalog-spec-link" href="COMPONENTS.md#form-fields">Read specification <svg aria-hidden="true"><use href="#icon-arrow-right"/></svg></a>
+        </div>
+
+        <div class="catalog-panel">
+          <div class="catalog-grid">
+            <div class="catalog-stack catalog-form-sample">
+              <div class="nivo-field">
+                <label class="nivo-field__label" for="demo-email">Work email<span class="nivo-field__required" aria-hidden="true">*</span></label>
+                <input class="nivo-input" id="demo-email" type="email" placeholder="name@school.org" aria-describedby="demo-email-help" required>
+                <p class="nivo-field__help" id="demo-email-help">Use the address connected to your school account.</p>
+              </div>
+              <div class="nivo-field">
+                <label class="nivo-field__label" for="demo-role">Role</label>
+                <select class="nivo-select" id="demo-role">
+                  <option>Special education teacher</option>
+                  <option>Case manager</option>
+                  <option>School administrator</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="catalog-stack catalog-form-sample">
+              <div class="nivo-field">
+                <label class="nivo-field__label" for="demo-invalid">School ID</label>
+                <input class="nivo-input" id="demo-invalid" value="12A" aria-invalid="true" aria-describedby="demo-invalid-error">
+                <p class="nivo-field__error" id="demo-invalid-error">Enter the six-digit ID provided by your district.</p>
+              </div>
+              <div class="nivo-field">
+                <label class="nivo-field__label" for="demo-disabled">District</label>
+                <input class="nivo-input" id="demo-disabled" value="North Valley Unified" disabled>
+                <p class="nivo-field__help">This value is managed by your administrator.</p>
+              </div>
+            </div>
+          </div>
+
+          <p class="catalog-demo-label">Long-form and combined inputs</p>
+          <div class="catalog-grid">
+            <div class="nivo-field">
+              <label class="nivo-field__label" for="demo-notes">Team note</label>
+              <textarea class="nivo-textarea" id="demo-notes" placeholder="Add context for your team..."></textarea>
+            </div>
+            <div class="nivo-field">
+              <label class="nivo-field__label" for="demo-invite">Invite a teammate</label>
+              <div class="nivo-input-group">
+                <input class="nivo-input" id="demo-invite" type="email" placeholder="colleague@school.org">
+                <button class="nivo-button" type="button">Send invite</button>
+              </div>
+              <p class="nivo-field__help">Invitations expire after seven days.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog-section" id="selection" aria-labelledby="selection-title">
+        <div class="catalog-section-header">
+          <div>
+            <p class="catalog-section-number">03 / SELECTION</p>
+            <h2 class="catalog-section-title" id="selection-title">Checkboxes, radios, and switches</h2>
+            <p class="catalog-section-description">Checkboxes select multiple values, radios select one, and switches change an immediately applied setting.</p>
+          </div>
+        </div>
+
+        <div class="catalog-panel">
+          <div class="catalog-grid catalog-grid--three">
+            <fieldset class="catalog-stack" style="border:0;padding:0;margin:0">
+              <legend class="catalog-demo-label">Checkboxes</legend>
+              <div class="nivo-choice-list">
+                <label class="nivo-check"><input type="checkbox" checked><span class="nivo-check__control" aria-hidden="true"></span><span>Team updates</span></label>
+                <label class="nivo-check"><input type="checkbox"><span class="nivo-check__control" aria-hidden="true"></span><span>Deadline reminders</span></label>
+                <label class="nivo-check"><input type="checkbox" disabled><span class="nivo-check__control" aria-hidden="true"></span><span>District announcements</span></label>
+              </div>
+            </fieldset>
+            <fieldset class="catalog-stack" style="border:0;padding:0;margin:0">
+              <legend class="catalog-demo-label">Radio group</legend>
+              <div class="nivo-choice-list">
+                <label class="nivo-radio"><input type="radio" name="demo-frequency" checked><span class="nivo-radio__control" aria-hidden="true"></span><span>Immediately</span></label>
+                <label class="nivo-radio"><input type="radio" name="demo-frequency"><span class="nivo-radio__control" aria-hidden="true"></span><span>Daily summary</span></label>
+                <label class="nivo-radio"><input type="radio" name="demo-frequency"><span class="nivo-radio__control" aria-hidden="true"></span><span>Weekly summary</span></label>
+              </div>
+            </fieldset>
+            <div class="catalog-stack">
+              <p class="catalog-demo-label">Switches</p>
+              <label class="nivo-switch"><input type="checkbox" checked><span class="nivo-switch__control" aria-hidden="true"></span><span>Email notifications</span></label>
+              <label class="nivo-switch"><input type="checkbox"><span class="nivo-switch__control" aria-hidden="true"></span><span>Quiet hours</span></label>
+              <label class="nivo-switch"><input type="checkbox" disabled><span class="nivo-switch__control" aria-hidden="true"></span><span>District-managed setting</span></label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog-section" id="feedback" aria-labelledby="feedback-title">
+        <div class="catalog-section-header">
+          <div>
+            <p class="catalog-section-number">04 / FEEDBACK</p>
+            <h2 class="catalog-section-title" id="feedback-title">Status, alerts, and loading</h2>
+            <p class="catalog-section-description">Semantic colors communicate system meaning. Logo pastels remain decorative and never replace success, warning, or danger states.</p>
+          </div>
+        </div>
+
+        <div class="catalog-panel">
+          <p class="catalog-demo-label">Badges</p>
+          <div class="catalog-row">
+            <span class="nivo-badge">Draft</span>
+            <span class="nivo-badge nivo-badge--lavender">Needs review</span>
+            <span class="nivo-badge nivo-badge--blue">In progress</span>
+            <span class="nivo-badge nivo-badge--mint">Complete</span>
+            <span class="nivo-badge nivo-badge--yellow">Due soon</span>
+            <span class="nivo-badge nivo-badge--danger">Overdue</span>
+          </div>
+
+          <p class="catalog-demo-label">Alerts</p>
+          <div class="catalog-alerts">
+            <div class="nivo-alert" data-dismissible-alert>
+              <svg class="nivo-alert__icon" aria-hidden="true"><use href="#icon-info"/></svg>
+              <div class="nivo-alert__content"><p class="nivo-alert__title">New team member added</p><p class="nivo-alert__message">Jordan can now view and contribute to this workspace.</p></div>
+              <button class="nivo-alert-dismiss" type="button" aria-label="Dismiss information alert">×</button>
+            </div>
+            <div class="nivo-alert nivo-alert--success"><svg class="nivo-alert__icon" aria-hidden="true"><use href="#icon-check-circle"/></svg><div class="nivo-alert__content"><p class="nivo-alert__title">All changes saved</p><p class="nivo-alert__message">Your team is seeing the latest information.</p></div></div>
+            <div class="nivo-alert nivo-alert--warning"><svg class="nivo-alert__icon" aria-hidden="true"><use href="#icon-warning"/></svg><div class="nivo-alert__content"><p class="nivo-alert__title">Review before Friday</p><p class="nivo-alert__message">Two items still need an assigned owner.</p></div></div>
+            <div class="nivo-alert nivo-alert--danger"><svg class="nivo-alert__icon" aria-hidden="true"><use href="#icon-danger"/></svg><div class="nivo-alert__content"><p class="nivo-alert__title">We could not save this update</p><p class="nivo-alert__message">Check your connection and try again. Your changes remain in this window.</p></div></div>
+          </div>
+
+          <p class="catalog-demo-label">Progress and skeleton</p>
+          <div class="catalog-grid">
+            <div class="catalog-demo-surface">
+              <div class="catalog-row" style="justify-content:space-between;margin-bottom:12px"><strong style="font-size:14px">Setup progress</strong><span style="font-size:13px;color:var(--nivo-text-muted)">68%</span></div>
+              <div class="nivo-progress" role="progressbar" aria-label="Setup progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="68"><div class="nivo-progress__bar" style="width:68%"></div></div>
+            </div>
+            <div class="catalog-demo-surface catalog-loading-card" aria-label="Loading content" aria-busy="true">
+              <span class="nivo-skeleton"></span><span class="nivo-skeleton"></span><span class="nivo-skeleton"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog-section" id="cards" aria-labelledby="cards-title">
+        <div class="catalog-section-header">
+          <div>
+            <p class="catalog-section-number">05 / CONTAINERS</p>
+            <h2 class="catalog-section-title" id="cards-title">Cards and summaries</h2>
+            <p class="catalog-section-description">Cards group related content. They should not become a default wrapper for every element on a page.</p>
+          </div>
+        </div>
+
+        <div class="catalog-grid catalog-grid--three">
+          <article class="nivo-card">
+            <p class="nivo-card__eyebrow">Team workspace</p>
+            <h3 class="nivo-card__title">Weekly coordination</h3>
+            <p class="nivo-card__body">Keep upcoming decisions and responsibilities visible to the whole team.</p>
+            <div class="nivo-card__footer"><div class="nivo-avatar-group" aria-label="Three team members"><span class="nivo-avatar">AC</span><span class="nivo-avatar" style="background:var(--nivo-brand-mint-soft)">JM</span><span class="nivo-avatar" style="background:var(--nivo-brand-yellow-soft)">+1</span></div><a class="nivo-link" href="#cards">Open</a></div>
+          </article>
+          <a class="nivo-card nivo-card--interactive catalog-card-link" href="#cards">
+            <p class="nivo-card__eyebrow">Next deadline</p>
+            <h3 class="nivo-card__title">Review service plan</h3>
+            <p class="nivo-card__body">Due Friday. Two sections still need an owner before the final review.</p>
+            <div class="nivo-card__footer"><span class="nivo-badge nivo-badge--yellow">Due soon</span><span style="font-size:13px;color:var(--nivo-text-muted)">May 24</span></div>
+          </a>
+          <article class="nivo-card nivo-card--selected">
+            <p class="nivo-card__eyebrow">Current period</p>
+            <div class="nivo-stat"><strong class="nivo-stat__value">18</strong><span class="nivo-stat__label">Items completed this week</span></div>
+            <div style="margin-top:20px"><div class="nivo-progress" role="progressbar" aria-label="Weekly completion" aria-valuemin="0" aria-valuemax="24" aria-valuenow="18"><div class="nivo-progress__bar" style="width:75%"></div></div></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="catalog-section" id="navigation" aria-labelledby="navigation-title">
+        <div class="catalog-section-header">
+          <div>
+            <p class="catalog-section-number">06 / NAVIGATION</p>
+            <h2 class="catalog-section-title" id="navigation-title">Wayfinding and local navigation</h2>
+            <p class="catalog-section-description">Navigation exposes location, hierarchy, and available movement without competing with the work itself.</p>
+          </div>
+        </div>
+
+        <div class="catalog-panel">
+          <p class="catalog-demo-label">Breadcrumb</p>
+          <nav aria-label="Breadcrumb">
+            <ol class="nivo-breadcrumb"><li><a href="#navigation">Workspace</a></li><li class="nivo-breadcrumb__separator" aria-hidden="true">/</li><li><a href="#navigation">Plans</a></li><li class="nivo-breadcrumb__separator" aria-hidden="true">/</li><li aria-current="page">Spring review</li></ol>
+          </nav>
+
+          <p class="catalog-demo-label">Tabs</p>
+          <div class="nivo-tabs" role="tablist" aria-label="Plan sections">
+            <button class="nivo-tab" id="tab-overview" role="tab" aria-selected="true" aria-controls="panel-overview">Overview</button>
+            <button class="nivo-tab" id="tab-tasks" role="tab" aria-selected="false" aria-controls="panel-tasks" tabindex="-1">Tasks</button>
+            <button class="nivo-tab" id="tab-activity" role="tab" aria-selected="false" aria-controls="panel-activity" tabindex="-1">Activity</button>
+          </div>
+          <div class="nivo-tab-panel" id="panel-overview" role="tabpanel" aria-labelledby="tab-overview"><p class="catalog-tab-content">A concise view of the plan, current owners, and upcoming decisions.</p></div>
+          <div class="nivo-tab-panel" id="panel-tasks" role="tabpanel" aria-labelledby="tab-tasks" hidden><p class="catalog-tab-content">Assigned work remains available without crowding the overview.</p></div>
+          <div class="nivo-tab-panel" id="panel-activity" role="tabpanel" aria-labelledby="tab-activity" hidden><p class="catalog-tab-content">Recent changes appear in a readable chronological stream.</p></div>
+
+          <p class="catalog-demo-label">Pagination and menu</p>
+          <div class="catalog-row" style="justify-content:space-between">
+            <nav class="nivo-pagination" aria-label="Results pages">
+              <button class="nivo-page-button" type="button" aria-label="Previous page" disabled><svg width="18" height="18" aria-hidden="true"><use href="#icon-left"/></svg></button>
+              <button class="nivo-page-button" type="button" data-page="1" aria-current="page">1</button>
+              <button class="nivo-page-button" type="button" data-page="2">2</button>
+              <button class="nivo-page-button" type="button" data-page="3">3</button>
+              <button class="nivo-page-button" type="button" aria-label="Next page"><svg width="18" height="18" aria-hidden="true"><use href="#icon-right"/></svg></button>
+            </nav>
+            <div class="nivo-dropdown" data-dropdown>
+              <button class="nivo-button nivo-button--secondary" type="button" data-dropdown-trigger aria-haspopup="menu" aria-expanded="false">Actions <svg aria-hidden="true"><use href="#icon-more"/></svg></button>
+              <div class="nivo-menu" role="menu" hidden>
+                <button class="nivo-menu-item" type="button" role="menuitem">Duplicate plan</button>
+                <button class="nivo-menu-item" type="button" role="menuitem">Export summary</button>
+                <div class="nivo-menu-separator" role="separator"></div>
+                <button class="nivo-menu-item nivo-menu-item--danger" type="button" role="menuitem">Archive plan</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog-section" id="data" aria-labelledby="data-title">
+        <div class="catalog-section-header">
+          <div>
+            <p class="catalog-section-number">07 / DATA</p>
+            <h2 class="catalog-section-title" id="data-title">Information-rich without feeling dense</h2>
+            <p class="catalog-section-description">Tables preserve scanability through alignment, restrained dividers, meaningful status labels, and clear sort behavior.</p>
+          </div>
+        </div>
+
+        <div class="catalog-panel">
+          <div class="nivo-table-wrap">
+            <table class="nivo-table">
+              <caption class="catalog-visually-hidden">Team assignments and due dates</caption>
+              <thead><tr><th scope="col" aria-sort="none"><button class="nivo-sort-button" type="button">Owner</button></th><th scope="col" aria-sort="none"><button class="nivo-sort-button" type="button">Assignment</button></th><th scope="col" aria-sort="none"><button class="nivo-sort-button" type="button">Due date</button></th><th scope="col">Status</th><th scope="col"><span class="catalog-visually-hidden">Actions</span></th></tr></thead>
+              <tbody>
+                <tr><td><div class="catalog-table-person"><span class="nivo-avatar">AC</span><span><span class="catalog-person-name">Avery Chen</span><span class="catalog-person-meta">Case manager</span></span></div></td><td>Review service plan</td><td data-sort-value="2026-05-24">May 24</td><td><span class="nivo-badge nivo-badge--yellow">Due soon</span></td><td><button class="nivo-icon-button" type="button" aria-label="Actions for Avery Chen"><svg aria-hidden="true"><use href="#icon-more"/></svg></button></td></tr>
+                <tr><td><div class="catalog-table-person"><span class="nivo-avatar" style="background:var(--nivo-brand-mint-soft)">JM</span><span><span class="catalog-person-name">Jordan Miles</span><span class="catalog-person-meta">Teacher</span></span></div></td><td>Confirm meeting notes</td><td data-sort-value="2026-05-27">May 27</td><td><span class="nivo-badge nivo-badge--blue">In progress</span></td><td><button class="nivo-icon-button" type="button" aria-label="Actions for Jordan Miles"><svg aria-hidden="true"><use href="#icon-more"/></svg></button></td></tr>
+                <tr><td><div class="catalog-table-person"><span class="nivo-avatar" style="background:var(--nivo-brand-blue-soft)">RS</span><span><span class="catalog-person-name">Riley Singh</span><span class="catalog-person-meta">Administrator</span></span></div></td><td>Approve final update</td><td data-sort-value="2026-05-30">May 30</td><td><span class="nivo-badge">Draft</span></td><td><button class="nivo-icon-button" type="button" aria-label="Actions for Riley Singh"><svg aria-hidden="true"><use href="#icon-more"/></svg></button></td></tr>
+                <tr><td><div class="catalog-table-person"><span class="nivo-avatar" style="background:var(--nivo-brand-yellow-soft)">MO</span><span><span class="catalog-person-name">Morgan Ortiz</span><span class="catalog-person-meta">Specialist</span></span></div></td><td>Upload supporting records</td><td data-sort-value="2026-05-20">May 20</td><td><span class="nivo-badge nivo-badge--mint">Complete</span></td><td><button class="nivo-icon-button" type="button" aria-label="Actions for Morgan Ortiz"><svg aria-hidden="true"><use href="#icon-more"/></svg></button></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog-section" id="overlays" aria-labelledby="overlays-title">
+        <div class="catalog-section-header">
+          <div>
+            <p class="catalog-section-number">08 / OVERLAYS</p>
+            <h2 class="catalog-section-title" id="overlays-title">Temporary layers</h2>
+            <p class="catalog-section-description">Tooltips clarify unfamiliar controls, menus expose compact actions, toasts confirm outcomes, and dialogs interrupt only for decisions that need focus.</p>
+          </div>
+        </div>
+
+        <div class="catalog-panel">
+          <div class="catalog-overlay-demo">
+            <button class="nivo-icon-button nivo-tooltip-trigger" type="button" data-tooltip="More information" aria-label="More information"><svg aria-hidden="true"><use href="#icon-info"/></svg></button>
+            <button class="nivo-button nivo-button--secondary" type="button" data-open-dialog="nivo-demo-dialog">Open dialog</button>
+            <button class="nivo-button" type="button" data-show-toast>Show toast</button>
+          </div>
+          <div class="catalog-note">
+            <svg aria-hidden="true"><use href="#icon-check-circle"/></svg>
+            <span>The dialog uses the native dialog element for focus trapping and Escape behavior. Menus support arrow keys, Home, End, Escape, and click-outside dismissal.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog-section" id="empty-states" aria-labelledby="empty-title">
+        <div class="catalog-section-header">
+          <div>
+            <p class="catalog-section-number">09 / ZERO STATES</p>
+            <h2 class="catalog-section-title" id="empty-title">A useful next step, not a dead end</h2>
+            <p class="catalog-section-description">Empty states explain why the area is empty and offer one clear way forward. Avoid decorative character illustrations.</p>
+          </div>
+        </div>
+
+        <div class="nivo-empty-state">
+          <img class="nivo-empty-state__mark" src="../brand/logo/nivo-mark-color.svg" alt="">
+          <h3 class="nivo-empty-state__title">No plans here yet</h3>
+          <p class="nivo-empty-state__body">Create a shared plan to keep responsibilities, decisions, and upcoming dates visible to your team.</p>
+          <button class="nivo-button" type="button"><svg aria-hidden="true"><use href="#icon-plus"/></svg>Create a plan</button>
+        </div>
+      </section>
+
+      <footer class="catalog-footer">
+        Nivo UI Component Library v1.0 / Built from Nivo Foundations v1 / Component behavior is framework-neutral and intended to be mapped into the production application.
+      </footer>
+    </main>
+  </div>
+
+  <dialog class="nivo-dialog" id="nivo-demo-dialog" aria-labelledby="demo-dialog-title">
+    <div class="nivo-dialog__header">
+      <h2 class="nivo-dialog__title" id="demo-dialog-title">Confirm team access</h2>
+      <button class="nivo-dialog-close" type="button" data-close-dialog aria-label="Close dialog">×</button>
+    </div>
+    <div class="nivo-dialog__body"><p>Jordan will be able to view this workspace, contribute updates, and receive team notifications.</p></div>
+    <div class="nivo-dialog__footer"><button class="nivo-button nivo-button--ghost" type="button" data-close-dialog>Cancel</button><button class="nivo-button" type="button" value="confirm" data-close-dialog>Confirm access</button></div>
+  </dialog>
+
+  <div class="nivo-toast-region" aria-live="polite" aria-atomic="true"></div>
+  <script src="nivo-components.js" defer></script>
+</body>
+</html>

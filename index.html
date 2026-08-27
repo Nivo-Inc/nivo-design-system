@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The official Nivo design system: brand, foundations, components, examples, and downloadable assets.">
+  <meta name="theme-color" content="#F2EEE7">
+  <title>Nivo Design System</title>
+  <link rel="icon" href="brand/icons/nivo-favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="tokens/tokens.css">
+  <link rel="stylesheet" href="components/nivo-components.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <a class="brand-link" href="#top" aria-label="Nivo Design System home">
+      <img src="brand/logo/nivo-logo-horizontal-color.svg" alt="Nivo">
+      <span>Design System</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="visually-hidden">Open navigation</span>
+      <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+      <a href="#brand">Brand</a>
+      <a href="#foundations">Foundations</a>
+      <a href="#components">Components</a>
+      <a href="#examples">Examples</a>
+      <a href="#downloads">Downloads</a>
+      <a class="nav-cta" href="components/index.html">Open catalog <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section-shell" id="top">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span>Official system · v1.1.0</div>
+        <h1>Clarity, without<br>the noise.</h1>
+        <p class="hero-lede">One shared source for Nivo’s identity, interface foundations, component patterns, and practical applications—readable by people, agents, and production code.</p>
+        <div class="hero-actions">
+          <a class="nivo-button nivo-button--lg" href="components/index.html">Explore components <span aria-hidden="true">→</span></a>
+          <a class="nivo-button nivo-button--secondary nivo-button--lg" href="Nivo_Design_System_v1.pdf">Read the guide</a>
+        </div>
+        <div class="hero-meta" aria-label="System summary">
+          <div><strong>24</strong><span>component patterns</span></div>
+          <div><strong>63+</strong><span>foundation tokens</span></div>
+          <div><strong>15</strong><span>official SVG assets</span></div>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="hero-orbit hero-orbit--one"></div>
+        <div class="hero-orbit hero-orbit--two"></div>
+        <div class="hero-orbit hero-orbit--three"></div>
+        <div class="hero-mark-card">
+          <img src="brand/logo/nivo-mark-master.svg" alt="">
+          <div class="hero-mark-label"><span>Locked master</span><span>Geometry unchanged</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="principles-band" aria-label="Design principles">
+      <div class="section-shell principles-grid">
+        <article><span>01</span><h2>Calm by default</h2><p>Reduce visual noise so the next useful action stays clear.</p></article>
+        <article><span>02</span><h2>Warm, not playful</h2><p>Use restrained pastels to support trust and approachability.</p></article>
+        <article><span>03</span><h2>Built for reality</h2><p>Responsive, accessible patterns designed for complex work.</p></article>
+      </div>
+    </section>
+
+    <section class="content-section section-shell" id="source-of-truth" aria-labelledby="source-title">
+      <div class="section-intro">
+        <p class="section-number">00 / HOW THIS WORKS</p>
+        <h2 id="source-title">One source of truth, three ways to use it.</h2>
+        <p>Every visual on this site is driven by the same files that agents and developers consume. When values disagree, the token file wins; when a logo depiction disagrees, the official asset wins.</p>
+      </div>
+      <div class="truth-grid">
+        <article class="truth-card">
+          <div class="truth-icon truth-icon--lavender" aria-hidden="true">{ }</div>
+          <p class="truth-label">Machines</p>
+          <h3>Tokens and code</h3>
+          <p>JSON, CSS, semantic HTML, and framework-neutral component behavior.</p>
+          <a href="tokens/design-tokens.json">Open token JSON <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="truth-card">
+          <div class="truth-icon truth-icon--mint" aria-hidden="true">Aa</div>
+          <p class="truth-label">People</p>
+          <h3>Visual documentation</h3>
+          <p>Browsable foundations, live component states, examples, and usage rules.</p>
+          <a href="#foundations">Browse foundations <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="truth-card">
+          <div class="truth-icon truth-icon--yellow" aria-hidden="true">✓</div>
+          <p class="truth-label">Teams</p>
+          <h3>Reviewed changes</h3>
+          <p>Versioned updates through pull requests, automated checks, and clear ownership.</p>
+          <a href="CONTRIBUTING.md">Contribution guide <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section content-section--tinted" id="brand" aria-labelledby="brand-title">
+      <div class="section-shell">
+        <div class="section-intro section-intro--split">
+          <div>
+            <p class="section-number">01 / BRAND</p>
+            <h2 id="brand-title">Distinctive at a glance.<br>Quiet in practice.</h2>
+          </div>
+          <p>The mark’s geometry is locked. Use the supplied SVG files exactly as provided—never type, trace, simplify, or regenerate the logo.</p>
+        </div>
+
+        <div class="logo-showcase">
+          <article class="logo-card logo-card--mark">
+            <div class="logo-card-label"><span>Mark only</span><span>Primary colorway</span></div>
+            <img src="brand/logo/nivo-mark-master.svg" alt="Nivo logo mark">
+          </article>
+          <article class="logo-card logo-card--wide">
+            <div class="logo-card-label"><span>Horizontal lockup</span><span>Light surface</span></div>
+            <img src="brand/logo/nivo-logo-horizontal-color.svg" alt="Nivo horizontal logo">
+          </article>
+          <article class="logo-card logo-card--dark">
+            <div class="logo-card-label"><span>Reversed lockup</span><span>Dark surface</span></div>
+            <img src="brand/logo/nivo-logo-horizontal-reversed.svg" alt="Nivo reversed horizontal logo">
+          </article>
+          <article class="logo-card logo-card--icons">
+            <div class="logo-card-label"><span>App icons</span><span>Light and dark</span></div>
+            <div><img src="brand/icons/nivo-app-icon-light.svg" alt="Nivo light app icon"><img src="brand/icons/nivo-app-icon-dark.svg" alt="Nivo dark app icon"></div>
+          </article>
+        </div>
+
+        <div class="brand-rule">
+          <div><strong>Locked asset</strong><span>SHA-256 verified master mark</span></div>
+          <code>8bad8637598c…e97247</code>
+          <a href="ASSET_MANIFEST.md">Asset usage guide <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section section-shell" id="foundations" aria-labelledby="foundations-title">
+      <div class="section-intro section-intro--split">
+        <div>
+          <p class="section-number">02 / FOUNDATIONS</p>
+          <h2 id="foundations-title">A restrained palette with room to breathe.</h2>
+        </div>
+        <p>Deep navy creates structure. Greige backgrounds soften the canvas. Pastels add warmth without carrying semantic meaning.</p>
+      </div>
+
+      <div class="foundation-heading">
+        <h3>Color</h3>
+        <p>Select a token to copy its hex value.</p>
+      </div>
+      <div class="color-grid">
+        <button class="color-chip color-chip--large" type="button" data-copy="#17263D" style="--chip:#17263D;--chip-text:#FBF9F5"><span>Brand Navy</span><code>#17263D</code></button>
+        <button class="color-chip" type="button" data-copy="#A285E8" style="--chip:#A285E8"><span>Lavender</span><code>#A285E8</code></button>
+        <button class="color-chip" type="button" data-copy="#6A9BF3" style="--chip:#6A9BF3"><span>Blue</span><code>#6A9BF3</code></button>
+        <button class="color-chip" type="button" data-copy="#A0E1C6" style="--chip:#A0E1C6"><span>Mint</span><code>#A0E1C6</code></button>
+        <button class="color-chip" type="button" data-copy="#F2C77F" style="--chip:#F2C77F"><span>Yellow</span><code>#F2C77F</code></button>
+        <button class="color-chip" type="button" data-copy="#F2EEE7" style="--chip:#F2EEE7"><span>Canvas</span><code>#F2EEE7</code></button>
+        <button class="color-chip" type="button" data-copy="#FBF9F5" style="--chip:#FBF9F5"><span>Surface</span><code>#FBF9F5</code></button>
+        <button class="color-chip" type="button" data-copy="#4E5958" style="--chip:#4E5958;--chip-text:#FBF9F5"><span>Text Secondary</span><code>#4E5958</code></button>
+        <button class="color-chip" type="button" data-copy="#226B55" style="--chip:#226B55;--chip-text:#FBF9F5"><span>Success</span><code>#226B55</code></button>
+        <button class="color-chip" type="button" data-copy="#75500F" style="--chip:#75500F;--chip-text:#FBF9F5"><span>Warning</span><code>#75500F</code></button>
+        <button class="color-chip" type="button" data-copy="#A1373F" style="--chip:#A1373F;--chip-text:#FBF9F5"><span>Danger</span><code>#A1373F</code></button>
+        <button class="color-chip" type="button" data-copy="#2F5DAA" style="--chip:#2F5DAA;--chip-text:#FBF9F5"><span>Information</span><code>#2F5DAA</code></button>
+      </div>
+
+      <div class="foundation-split">
+        <div>
+          <div class="foundation-heading"><h3>Typography</h3><p>Inter for product and web.</p></div>
+          <div class="type-specimens">
+            <div class="type-row type-row--display"><span>Display XL</span><p>Thoughtful by design.</p><code>64 / 72 · 600</code></div>
+            <div class="type-row type-row--h1"><span>Heading 1</span><p>Keep important work moving.</p><code>40 / 48 · 600</code></div>
+            <div class="type-row type-row--h3"><span>Heading 3</span><p>Clear context. Confident action.</p><code>24 / 32 · 600</code></div>
+            <div class="type-row type-row--body"><span>Body M</span><p>Nivo uses calm, direct language that explains what matters and what someone can do next.</p><code>16 / 24 · 400</code></div>
+            <div class="type-row type-row--caption"><span>Caption</span><p>SUPPORTING CONTEXT</p><code>12 / 16 · 500</code></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="foundation-heading"><h3>Shape and depth</h3><p>Subtle structure, never decoration.</p></div>
+          <div class="shape-grid">
+            <div class="radius-card"><span class="radius-demo radius-demo--xs"></span><strong>XS</strong><code>4px</code></div>
+            <div class="radius-card"><span class="radius-demo radius-demo--md"></span><strong>MD</strong><code>8px</code></div>
+            <div class="radius-card"><span class="radius-demo radius-demo--xl"></span><strong>XL</strong><code>16px</code></div>
+            <div class="radius-card"><span class="radius-demo radius-demo--pill"></span><strong>Pill</strong><code>999px</code></div>
+          </div>
+          <div class="shadow-stack">
+            <div class="shadow-card shadow-card--sm"><span>Shadow / SM</span><code>0 1px 2px</code></div>
+            <div class="shadow-card shadow-card--md"><span>Shadow / MD</span><code>0 8px 24px</code></div>
+            <div class="shadow-card shadow-card--lg"><span>Shadow / LG</span><code>0 18px 48px</code></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="spacing-panel">
+        <div><p class="section-number">SPACING / 4PX BASE</p><h3>Consistent rhythm at every scale.</h3></div>
+        <div class="spacing-scale" aria-label="Spacing scale in pixels">
+          <span style="--space:4px"><i></i><b>4</b></span><span style="--space:8px"><i></i><b>8</b></span><span style="--space:12px"><i></i><b>12</b></span><span style="--space:16px"><i></i><b>16</b></span><span style="--space:24px"><i></i><b>24</b></span><span style="--space:32px"><i></i><b>32</b></span><span style="--space:48px"><i></i><b>48</b></span><span style="--space:64px"><i></i><b>64</b></span><span style="--space:96px"><i></i><b>96</b></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section components-section" id="components" aria-labelledby="components-title">
+      <div class="section-shell">
+        <div class="section-intro section-intro--split section-intro--inverse">
+          <div><p class="section-number">03 / COMPONENTS</p><h2 id="components-title">Calm components for complex work.</h2></div>
+          <div><p>Production-minded patterns built entirely from Nivo tokens, with documented states, responsive behavior, and accessible semantics.</p><a class="text-link text-link--inverse" href="components/index.html">Open interactive catalog <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <div class="components-preview">
+          <img src="components/component-library-preview.png" alt="Preview of the Nivo component library showing buttons, fields, alerts, cards, navigation, and tables">
+        </div>
+        <div class="component-stats">
+          <div><strong>24</strong><span>core patterns</span></div><div><strong>7</strong><span>required states</span></div><div><strong>320px</strong><span>minimum tested viewport</span></div><div><strong>AA</strong><span>normal-text contrast target</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section section-shell" id="examples" aria-labelledby="examples-title">
+      <div class="section-intro section-intro--split">
+        <div><p class="section-number">04 / APPLICATION</p><h2 id="examples-title">The system in context.</h2></div>
+        <p>Examples demonstrate hierarchy and tone. They are not independent sources—foundations, components, and official assets remain authoritative.</p>
+      </div>
+      <a class="preview-board" href="reference/nivo-brand-preview-board.svg" aria-label="Open the full Nivo brand preview board">
+        <img src="reference/nivo-brand-preview-board.png" alt="Nivo brand preview showing logo lockups, app icons, favicon sizing, and a website header example">
+        <span>Open full vector preview <b aria-hidden="true">↗</b></span>
+      </a>
+    </section>
+
+    <section class="content-section content-section--tinted" id="accessibility" aria-labelledby="accessibility-title">
+      <div class="section-shell accessibility-layout">
+        <div class="section-intro">
+          <p class="section-number">05 / ACCESSIBILITY</p>
+          <h2 id="accessibility-title">Usable is part of beautiful.</h2>
+          <p>Accessibility is a component requirement, not a final review step. Every interactive pattern needs a visible focus state, an accessible name, and an honest keyboard path.</p>
+          <a class="text-link" href="components/COMPONENTS.md#production-test-checklist">Read the production checklist <span aria-hidden="true">→</span></a>
+        </div>
+        <ul class="checklist">
+          <li><span aria-hidden="true">✓</span><div><strong>Keyboard complete</strong><p>Every control can be reached and operated without a pointer.</p></div></li>
+          <li><span aria-hidden="true">✓</span><div><strong>Visible focus</strong><p>Focus is always perceptible and never removed without replacement.</p></div></li>
+          <li><span aria-hidden="true">✓</span><div><strong>Meaning beyond color</strong><p>Text or iconography carries status; color remains supporting information.</p></div></li>
+          <li><span aria-hidden="true">✓</span><div><strong>Responsive at 320px</strong><p>Content stays usable without page-level horizontal scrolling.</p></div></li>
+          <li><span aria-hidden="true">✓</span><div><strong>Reduced motion</strong><p>Movement respects user preferences and never blocks comprehension.</p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content-section section-shell" id="downloads" aria-labelledby="downloads-title">
+      <div class="section-intro section-intro--split">
+        <div><p class="section-number">06 / RESOURCES</p><h2 id="downloads-title">Use the right source for the job.</h2></div>
+        <p>Download complete packages or work directly from the versioned source files in this repository.</p>
+      </div>
+      <div class="download-grid">
+        <a class="download-card download-card--featured" href="downloads/Nivo_Design_System_v1_Complete.zip" download>
+          <span class="download-type">COMPLETE PACKAGE</span><h3>Nivo Design System v1.1</h3><p>Tokens, documentation, logo assets, icons, components, and visual references.</p><strong>Download ZIP <span aria-hidden="true">↓</span></strong>
+        </a>
+        <a class="download-card" href="Nivo_Design_System_v1.pdf"><span class="download-type">FOUNDATIONS</span><h3>Visual system guide</h3><p>Polished PDF reference for brand and interface foundations.</p><strong>Open PDF <span aria-hidden="true">↗</span></strong></a>
+        <a class="download-card" href="tokens/design-tokens.json"><span class="download-type">TOKENS</span><h3>Machine-readable JSON</h3><p>Exact source values for agents, tooling, and platform implementations.</p><strong>Open JSON <span aria-hidden="true">→</span></strong></a>
+        <a class="download-card" href="downloads/Nivo_Design_System_Figma_Import.sketch" download><span class="download-type">OPTIONAL FIGMA</span><h3>Figma import file</h3><p>Three-page visual working copy. GitHub remains the source of truth.</p><strong>Download .sketch <span aria-hidden="true">↓</span></strong></a>
+      </div>
+    </section>
+
+    <section class="governance-section">
+      <div class="section-shell governance-layout">
+        <div><p class="section-number">07 / GOVERNANCE</p><h2>Change the system deliberately.</h2><p>Every change should connect intent, exact values, visual documentation, and implementation.</p></div>
+        <ol class="workflow-list">
+          <li><span>1</span><div><strong>Propose</strong><p>Explain the user or product problem.</p></div></li>
+          <li><span>2</span><div><strong>Update</strong><p>Change tokens, components, specs, and examples together.</p></div></li>
+          <li><span>3</span><div><strong>Verify</strong><p>Run accessibility, responsive, and visual checks.</p></div></li>
+          <li><span>4</span><div><strong>Review</strong><p>Merge through a documented pull request.</p></div></li>
+          <li><span>5</span><div><strong>Release</strong><p>Version the package and publish the site.</p></div></li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-shell footer-inner">
+      <div><img src="brand/logo/nivo-logo-horizontal-color.svg" alt="Nivo"><p>Thoughtful by design.</p></div>
+      <div class="footer-links"><a href="README.md">Repository guide</a><a href="CHANGELOG.md">Changelog</a><a href="CONTRIBUTING.md">Contributing</a><a href="#top">Back to top ↑</a></div>
+      <p class="footer-meta">Nivo Design System · Version 1.1.0</p>
+    </div>
+  </footer>
+
+  <div class="copy-toast" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
